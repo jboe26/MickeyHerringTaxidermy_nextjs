@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <div
@@ -9,40 +11,40 @@ export default function Home() {
 
       {/* Nav */}
       <nav className="absolute top-0 left-0 right-0 z-20 px-8 py-5 flex items-center justify-between">
-        <a href="/">
+        <Link href="/">
           <img src="/assets/MH.png" alt="MH Logo" className="w-20" />
-        </a>
+        </Link>
         <div className="flex gap-10 items-center">
-          <a
+          <Link
             href="/"
             className="text-white uppercase text-sm tracking-wide hover:text-white/70"
           >
             Home
-          </a>
-          <a
+          </Link>
+          <Link
             href="/pricelist"
             className="text-white uppercase text-sm tracking-wide hover:text-white/70"
           >
             Price List
-          </a>
-          <a
+          </Link>
+          <Link
             href="/gallery"
             className="text-white uppercase text-sm tracking-wide hover:text-white/70"
           >
             Gallery
-          </a>
-          <a
+          </Link>
+          <Link
             href="/reviews"
             className="text-white uppercase text-sm tracking-wide hover:text-white/70"
           >
             Reviews
-          </a>
-          <a
+          </Link>
+          <Link
             href="/contact"
             className="bg-[#6b3a1f] text-white uppercase text-sm px-5 py-2 rounded-lg hover:bg-[#7d4424]"
           >
             Contact
-          </a>
+          </Link>
         </div>
       </nav>
 
